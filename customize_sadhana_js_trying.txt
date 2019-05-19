@@ -1,0 +1,124 @@
+
+    <div class="dropdown show" style="width:100%;">
+      <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Customize your japa
+      </a>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#" id="japa_mins">No. of mins</a>
+        <a class="dropdown-item" href="#" id="japa_rounds">No. of rounds</a>
+        <a class="dropdown-item" href="#" id="japa_percentage">Percentage</a>
+        <a class="dropdown-item" href="#" id="japa_full_half">Full/half/null</a>
+      </div>
+      <h5 id="japa_warning"></h5>
+    </div>
+
+      <br><br>
+    <br>
+
+    <label for="reading"><b>Reading</b></label>
+    <div class="dropdown show">
+      <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Customize your reading
+      </a>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+
+    <br>
+
+
+    <label for="hearing"><b>Hearing</b></label>
+    <div class="dropdown show">
+      <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Customize your hearing
+      </a>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+
+    <br>
+
+    <label for="aarti"><b>Aarti</b></label>
+    <div class="dropdown show">
+      <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Customize your aarti
+      </a>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  $("#japa_mins").click(function(){
+      var japa_txt;
+      var mins = prompt("Enter the no. of mins you chant", "64");
+      if(mins == null || mins == "")
+        {japa_txt = "**empty field";}
+      else
+        {japa_txt = "You have entered " + mins + " mins";}
+
+      $("#japa_warning").html(japa_txt);
+  });
+
+  $("#japa_rounds").click(function(){
+      var japa_txt;
+      var rounds = prompt("Enter the no. of rounds you chant", "8");
+      if(rounds == null || rounds == "")
+        {japa_txt = "**empty field";}
+      else
+      {japa_txt = "You have entered " + rounds + " rounds";}
+
+      $("#japa_warning").html(japa_txt);
+  });
+
+  $("#japa_percentage").click(function(){
+      var japa_txt;
+      var percentage = prompt("Enter the percentage of rounds you chant", "50");
+      if(percentage == null || percentage == "")
+        {japa_txt = "**empty field";}
+      else
+      {japa_txt = "You have entered " + percentage + " %";}
+
+      $("#japa_warning").html(japa_txt);
+  });
+
+  $("#japa_full_half").click(function(){
+      var japa_txt;
+      var percentage = prompt("Enter the percentage of rounds you chant", "50");
+      if(percentage == null || percentage == "")
+        {japa_txt = "**empty field";}
+      else
+      {japa_txt = "You have entered " + percentage + " %";}
+
+      $("#japa_warning").html(japa_txt);
+  });

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="sadhana_weightage.css">
+  <title>Sadhana Tracking | Customize Sadhana</title>
+</head>
+<body>
+
+<!--nav bar  -->
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="images/ISKCON_logo.png" class="img-fluid d-block ms-auto" height="300em" width="130em">
+
+    <a class="navbar-brand" href="index.html" style="margin-left:10vw;">Sadhana Tracking</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto" style="margin-left:8vw;">
+        <li class="nav-item active">
+          <a class="nav-link btn btn-light" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link btn btn-light" href="index.html#feedback" >Feed Back </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link btn btn-light" href="index.html#contactus" >Contact Us  </a>
+        </li>
+        <li class="nav-item dropdown active" style="z-index:10;">
+          <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Sadhana
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item btn btn-warning" href="sadhana_weightage.html" style="width:auto;">Sadhana Weightage</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item btn btn-warning" href="default_sadhana.html" style="width:auto;">Sadhana Record</a>
+        </li>
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Login
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item btn btn-warning" class="dropdown-item btn btn-warning button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="signup_form.html">Sign Up</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item btn btn-warning" href="#" style="pointer-events: none;opacity:0.2;" disabled>Logout</a>
+          </div>
+
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+</div>
+<!-- End of nav bar -->
+
+
+<!-- Customized Sadhana entry form -->
+<div class="container cust_sadhana_input con">
+  <form style="width:100%;">
+    <button id="japa" class="btn btn-info">Customize your japa sadhana</button>
+    <p id="japa_form">
+      <input type="radio" name="option1" id="japa_opt1"> No. of rounds
+      <br>
+      <input type="radio" name="option2" id="japa_opt2"> No. of mins
+      <br>
+      <input type="radio" name="option3" id="japa_opt3"> Percentage
+      <br>
+      <button class="btn btn-warning" style="width:30%;">Confirm</button>
+    </p>
+
+    <button id="hearing" class="btn btn-info">Customize your hearing sadhana</button>
+    <p id="hearing_form" >
+      great
+    </p>
+
+    <button id="reading" class="btn btn-info">Customize your reading sadhana</button>
+    <p id="reading_form"  >
+      hello
+    </p>
+
+    <button id="aarti" class="btn btn-info">Customize your aarti sadhana</button>
+    <p id="aarti_form"  >
+      bye
+    </p>
+
+    <button class="btn btn-success">Submit</button>
+  </form>
+</div>
+<!-- End of Customized Sadhana entry form -->
+
+
+<!-- Login page -->
+<div id="id01" class="modal text-center">
+
+  <div class="modal-content animate">
+
+    <div class="container">
+
+	  <label for="mobile"><b>Mobile No.</b></label>
+    <input type="text" placeholder="10 digit mobile number" id="log_mobile_no" name="mobile" required>
+    <h5 id="mobilejs"  style="color:red;text-align:left;margin:0;"></h5>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Password" id="log_password" name="psw" required>
+	  <h5 id="passjs"  style="color:red;text-align:left;margin:0;"></h5>
+	  <h5 id="passmobjs"  style="color:red;text-align:center;margin:0;"></h5>
+    <br>
+
+    <label for="state"><b>State</b></label>
+    <br>
+    <select id="state_select_login" style="width:100%;">
+      <option></option>
+      <option>Andhra Pradesh</option>
+      <option>Arunachal Pradesh</option>
+      <option>Assam</option>
+      <option>Bihar</option>
+      <option>Chhattisgarh</option>
+      <option>Goa</option>
+      <option>Gujarat</option>
+      <option>Haryana</option>
+      <option>Himachal Pradesh</option>
+      <option>Jammu and Kashmir</option>
+      <option>Jharkhand</option>
+      <option>Karnataka</option>
+      <option>Kerala</option>
+      <option>Madhya Pradesh</option>
+      <option>Maharashtra</option>
+      <option>Manipur</option>
+      <option>Meghalaya</option>
+      <option>Mizoram</option>
+      <option>Nagaland</option>
+      <option>Odisha</option>
+      <option>Punjab</option>
+      <option>Rajasthan</option>
+      <option>Sikkim</option>
+      <option>Tamil Nadu</option>
+      <option>Telangana</option>
+      <option>Tripura</option>
+      <option>Uttar Pradesh</option>
+      <option>Uttarakhand</option>
+      <option>West Bengal</option>
+    </select>
+      <br>
+
+    <button type="submit" id="login_button" class="btn btn-success" style="z-index:100;">Login</button>
+
+	  <label>
+		<br><br>New user ? <a href="signup_form.html">Sign up</a>
+	  </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn-danger" style="z-index:100;">Cancel</button>
+      <span class="psw"> <a href="#">Forgot password?</a></span>
+
+    </div>
+  </div>
+</div>
+<!-- End of login page -->
+
+
+
+
+<!-- footer -->
+<div class="container-fluid">
+<div class="row">
+  <div class="col-12 text-center footer">
+    <br>
+      <p>&copy @<a href="#" style="text-decoration:none;color:#fff;a:hover{opacity:0.6;}">www.SadhanaTracking.com</a>
+
+      </p>
+  </div>
+</div>
+</div>
+<!-- End of footer -->
+
+
+
+
+</body>
+<!-- Bootstrap JS scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- End of bootsrtrap JS scripts-->
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+      modal.style.display = "none";
+  }
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src = "login.js"></script>
+<script src="customize_sadhana.js"></script>
+</html>
