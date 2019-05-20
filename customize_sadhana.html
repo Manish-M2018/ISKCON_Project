@@ -36,20 +36,18 @@
             Sadhana
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item btn btn-warning" href="sadhana_weightage.html" style="width:auto;">Sadhana Weightage</a>
+            <a class="dropdown-item btn btn-warning" href="sadhana_weightage.html">Sadhana Weightage</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item btn btn-warning" href="default_sadhana.html" style="width:auto;">Sadhana Record</a>
+            <a class="dropdown-item btn btn-warning" href="default_sadhana.html">Sadhana Record</a>
         </li>
         <li class="nav-item dropdown active">
           <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Login
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item btn btn-warning" class="dropdown-item btn btn-warning button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;" >Login</a>
+            <a class="dropdown-item btn btn-warning" onclick="document.getElementById('id01').style.display='block'">Login</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="signup_form.html">Sign Up</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item btn btn-warning" href="#" style="pointer-events: none;opacity:0.2;" disabled>Logout</a>
           </div>
 
         </li>
@@ -65,32 +63,62 @@
 <div class="container cust_sadhana_input con">
   <form style="width:100%;">
     <button id="japa" class="btn btn-info">Customize your japa sadhana</button>
-    <p id="japa_form">
+    <div id="japa_form">
       <input type="radio" name="option1" id="japa_opt1"> No. of rounds
       <br>
       <input type="radio" name="option2" id="japa_opt2"> No. of mins
       <br>
       <input type="radio" name="option3" id="japa_opt3"> Percentage
       <br>
-      <button class="btn btn-warning" style="width:30%;">Confirm</button>
-    </p>
+      <button id="japa_confirm_button" class="btn btn-warning" style="width:30%;">Confirm</button>
+    </div>
 
     <button id="hearing" class="btn btn-info">Customize your hearing sadhana</button>
-    <p id="hearing_form" >
-      great
-    </p>
+    <div id="hearing_form" >
+      <input type="radio" name="option1" id="hear_opt1"> No. of mins
+      <br>
+      <input type="radio" name="option2" id="hear_opt2"> Timer
+      <br>
+      <label>Start time: </label>
+      <input type="text" id="hear_opt_start_time" style="width:20%;height:2vh;">
+      <label>End time: </label>
+      <input type="text" id="hear_opt_end_time" style="width:20%;height:2vh;">
+      <br>
+      <h7>Note: Start time and end time according to 24 hour clock</h7>
+      <br>
+      <button id="hear_confirm_button" class="btn btn-warning" style="width:30%;">Confirm</button>
+    </div>
 
     <button id="reading" class="btn btn-info">Customize your reading sadhana</button>
-    <p id="reading_form"  >
-      hello
-    </p>
+    <div id="reading_form">
+      <input type="radio" name="option1" id="read_opt1"> No. of mins
+      <br>
+      <input type="radio" name="option2" id="read_opt2"> No. of pages
+      <br>
+      <input type="radio" name="option3" id="read_opt3"> Timer
+      <br>
+      <label>Start time: </label>
+      <input type="text" id="read_opt_start_time" style="width:20%;height:2vh;">
+      <label>End time: </label>
+      <input type="text" id="read_opt_end_time" style="width:20%;height:2vh;">
+      <br>
+      <h7>Note: Start time and end time according to 24 hour clock</h7>
+      <br>
+      <button id="read_confirm_button" class="btn btn-warning" style="width:30%;">Confirm</button>
+    </div>
 
     <button id="aarti" class="btn btn-info">Customize your aarti sadhana</button>
-    <p id="aarti_form"  >
-      bye
-    </p>
+    <div id="aarti_form">
+      <input type="radio" name="option1" id="aarti_opt1"> No. of rounds
+      <br>
+      <input type="radio" name="option2" id="aarti_opt2"> No. of mins
+      <br>
+      <input type="radio" name="option3" id="aarti_opt3"> Percentage
+      <br>
+      <button class="btn btn-warning" style="width:30%;">Confirm</button>
+    </div>
 
-    <button class="btn btn-success">Submit</button>
+    <button id="aarti_confirm_button" class="btn btn-success">Submit</button>
   </form>
 </div>
 <!-- End of Customized Sadhana entry form -->
